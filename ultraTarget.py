@@ -1,3 +1,8 @@
+# Measuring part is modified from Matt Hawkin's code.
+#
+# Author : Matt Hawkins
+# Date   : 28/01/2013
+
 from Tkinter import *       
 import RPi.GPIO as GPIO
 import time
