@@ -1,0 +1,333 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframEngine 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       160,          7]
+NotebookDataLength[     11625,        324]
+NotebookOptionsPosition[     10566,        286]
+NotebookOutlinePosition[     10905,        301]
+CellTagsIndexPosition[     10862,        298]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"apiKey", "=", "\"\<AIzaSyBDBOicayGydcir_gqb4E3pM2g-GhtQS2g\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"engine", "=", "\"\<015598078043542143673:zraw6p7mdd8\>\""}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.673973329469997*^9, 3.673973345574637*^9}, {
+  3.673975346204988*^9, 3.673975357819106*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gs", "=", 
+  RowBox[{
+  "ServiceConnect", "[", "\"\<GoogleCustomSearch\>\"", "]"}]}]], "Input"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.674330381810712*^9}]
+}, Open  ]],
+
+Cell[BoxData["SystemDialogInput"], "Input",
+ CellChangeTimes->{{3.6739960595021067`*^9, 3.6739960643251343`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"gs", "[", "#", "]"}], "&"}], "/@", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<Authenication\>\"", ",", "\"\<ID\>\"", ",", "\"\<Information\>\"", 
+    ",", "\"\<Name\>\"", ",", "\"\<Requests\>\""}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.673995627890294*^9, 3.673995758454129*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"Needs", "[", "\"\<GUIKit`\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"GUIRunModal", "[", 
+  RowBox[{"Widget", "[", 
+   RowBox[{"\"\<Button\>\"", ",", "\[IndentingNewLine]", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<text\>\"", "->", "\"\<Update\>\""}], ",", " ", 
+      "\[IndentingNewLine]", " ", 
+      RowBox[{"BindEvent", "[", 
+       RowBox[{"\"\<action\>\"", ",", " ", "\[IndentingNewLine]", "  ", 
+        RowBox[{"Script", "[", 
+         RowBox[{"updateList", "[", "]"}], "]"}]}], " ", 
+       "\[IndentingNewLine]", "   ", "]"}], ",", 
+      RowBox[{"Script", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"updateList", "[", "]"}], ":=", 
+         RowBox[{"continue", "=", "0"}]}], ";"}], "]"}]}], 
+     "\[IndentingNewLine]", " ", "}"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.674052322998149*^9, 3.674052336188304*^9}, {
+   3.6740524272037067`*^9, 3.674052550681078*^9}, 3.674053350560051*^9, 
+   3.674086717091608*^9, 3.674145576704878*^9}],
+
+Cell[BoxData[{
+ RowBox[{"FrontEndExecute", "[", 
+  RowBox[{"FrontEnd`RecordSound", "[", 
+   RowBox[{"7", ",", "0"}], "]"}], "]"}], "\n", 
+ RowBox[{"FrontEndExecute", "[", 
+  RowBox[{"FrontEnd`RecordSound", "[", 
+   RowBox[{"8", ",", "0"}], "]"}], "]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"will", " ", "probably", " ", "do", " ", 
+    RowBox[{"this", ".", "This"}], " ", "is", " ", "the", " ", "least", " ", 
+    "clear", " ", "point", " ", "so", " ", 
+    RowBox[{"far", ".", "This"}], " ", "may", " ", "not", " ", "be", " ", 
+    "needed", " ", "on", " ", 
+    RowBox[{"Windows", ".", "\[IndentingNewLine]", "Now"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"FrontEndExecute", "[", 
+    RowBox[{"FrontEnd`RecordSound", "[", "5", "]"}], "]"}]}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "will", " ", "list", " ", "the", " ", "available", " ", "devices", " ", 
+    "by", " ", "number"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"FrontEndExecute", "[", 
+   RowBox[{"FrontEnd`RecordSound", "[", 
+    RowBox[{"6", ",", "deviceNumber"}], "]"}], "]"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "will", " ", "list", " ", "the", " ", "available", " ", "formats", " ", 
+    "for", " ", "the", " ", "device"}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"FrontEndExecute", "[", 
+   RowBox[{"FrontEnd`RecordSound", "[", 
+    RowBox[{"1", ",", "deviceNumber", ",", "formatNumber"}], "]"}], "]"}], 
+  " ", 
+  RowBox[{"(*", 
+   RowBox[{"will", " ", "start", " ", 
+    RowBox[{"recording", ".", "It"}], " ", "returns", " ", "control", " ", 
+    RowBox[{"immediately", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FrontEndExecute", "[", 
+   RowBox[{"FrontEnd`RecordSound", "[", "2", "]"}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "will", " ", "stop", " ", "recording", " ", "and", " ", "return", " ", 
+    "the", " ", 
+    RowBox[{"duration", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FrontEndExecute", "[", 
+   RowBox[{"FrontEnd`RecordSound", "[", "3", "]"}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "will", " ", "return", " ", "the", " ", "recorded", " ", "sound", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"it", "'"}], "s", " ", "the", " ", "\"\<OK\>\"", " ", "button", 
+      " ", "in", " ", "the", " ", "dialog"}], ")"}]}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"FrontEndExecute", "[", 
+   RowBox[{"FrontEnd`RecordSound", "[", "4", "]"}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "will", " ", "probably", " ", "discard", " ", "the", " ", "recorded", " ", 
+    "sound", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"it", "'"}], "s", " ", "the", " ", "Cancel", " ", "button"}], 
+     ")"}]}], "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"FrontEndExecute", "[", 
+   RowBox[{"FrontEnd`RecordSound", "[", 
+    RowBox[{"9", ",", "0"}], "]"}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "will", " ", "return", " ", "the", " ", "current", " ", "volume", " ", 
+     "of", " ", "the", " ", "recorded", " ", "sound"}], ",", 
+    RowBox[{
+    "and", " ", "is", " ", "used", " ", "for", " ", "the", " ", "progress", 
+     " ", "indicator", " ", "in", " ", "the", " ", 
+     RowBox[{"dialog", "."}]}]}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.674078483104892*^9, 3.674078483106382*^9}, {
+  3.674078765688466*^9, 3.67407884451094*^9}, {3.674087063886385*^9, 
+  3.6740870775759163`*^9}}],
+
+Cell[BoxData["\"\<https://mathematica.stackexchange.com/questions/4451/is-it-\
+possible-to-use-mathematica-to-record-sound-and-or-vision/82776#82776?s=\
+5b0cf5dae48d98db5b36b0872bbc6\>\""], "Input",
+ CellChangeTimes->{{3.674078449019483*^9, 3.674078461092938*^9}, {
+  3.674329240056449*^9, 3.674329240132225*^9}}],
+
+Cell[BoxData[
+ RowBox[{"SystemDialogInput", "[", "\"\<RecordSound\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6740789034590807`*^9, 3.674078903460792*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FindDevices", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.6740878004774847`*^9, 3.674087817800818*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dev", "=", 
+  RowBox[{"DeviceOpen", "[", "\"\<RandomSignalDemo\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.674088006627781*^9, 3.67408805135707*^9}, {
+   3.6740881153283653`*^9, 3.674088120749919*^9}, 3.674088169198851*^9, {
+   3.674088491033527*^9, 3.674088491813525*^9}, 3.6741452967480917`*^9, {
+   3.674145332991029*^9, 3.674145333838419*^9}, {3.674145469841008*^9, 
+   3.6741454757251472`*^9}}],
+
+Cell[BoxData["0.6020117106072909`"], "Output",
+ CellChangeTimes->{3.6741453373496103`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SystemDialogInput", "[", "\"\<RecordSound\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6741451683230057`*^9, 3.674145193468437*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Streams", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.674145398106699*^9, 3.674145401221208*^9}}],
+
+Cell[BoxData["GPIO"], "Input",
+ CellChangeTimes->{{3.674323969242795*^9, 3.674323970242648*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"tune", "[", 
+   RowBox[{"r_", ",", "f_"}], "]"}], ":=", 
+  RowBox[{"(", 
+   RowBox[{"Do", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"DeviceWrite", "[", 
+       RowBox[{"\"\<GPIO\>\"", ",", 
+        RowBox[{"18", "\[Rule]", "1"}]}], "]"}], ";", 
+      RowBox[{"Pause", "[", 
+       RowBox[{"r", "/", "f"}], "]"}], ";", 
+      RowBox[{"DeviceWrite", "[", 
+       RowBox[{"\"\<GPIO\>\"", ",", 
+        RowBox[{"18", "->", "0"}]}], "]"}], ";", 
+      RowBox[{"Pause", "[", 
+       FractionBox[
+        RowBox[{"1", "-", "r"}], "f"], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "f"}], "}"}]}], "]"}], ")"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", 
+   RowBox[{"CreateScheduledTask", "[", 
+    RowBox[{"tune", "[", 
+     RowBox[{"0.1", ",", "100"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"RunScheduledTask", "[", 
+  RowBox[{
+   RowBox[{"StartScheduledTask", "[", "t", "]"}], ",", 
+   RowBox[{"{", "0", "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.674330237641611*^9, 3.6743302677854567`*^9}, {
+   3.674330397396693*^9, 3.6743303987788467`*^9}, {3.6743304293725986`*^9, 
+   3.674330431784042*^9}, {3.674330486964615*^9, 3.674330524477078*^9}, {
+   3.674331473985259*^9, 3.6743314939615517`*^9}, {3.6743315946184196`*^9, 
+   3.6743315966152077`*^9}, {3.674331884430196*^9, 3.674331910319641*^9}, {
+   3.6743319926674843`*^9, 3.674331997848096*^9}, {3.674332243963232*^9, 
+   3.6743322459727173`*^9}, {3.674332724596141*^9, 3.674332726452591*^9}, {
+   3.674333197965661*^9, 3.6743331983659487`*^9}, 3.674333260376677*^9, {
+   3.674333362269252*^9, 3.674333404943481*^9}, {3.674333489143486*^9, 
+   3.6743334903542833`*^9}, 3.6743336716265707`*^9, 3.674334156928999*^9, {
+   3.674335964620982*^9, 3.6743359694330072`*^9}, {3.674336087235182*^9, 
+   3.674336096657587*^9}, {3.674336151588516*^9, 3.6743361812837677`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "r", "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Slider", "[", 
+      RowBox[{"r", ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1", ",", "0.1"}], "}"}]}], "]"}], ",", "r"}], 
+    "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.674328822566711*^9, 3.674328912413024*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`r$$}, 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Slider", "[", 
+     RowBox[{"r$$", ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1", ",", "0.1`"}], "}"}]}], "]"}], ",", "r$$"}], 
+   "}"}],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{{3.6743288961515617`*^9, 3.674328913810409*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StopScheduledTask", "[", "t", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.674330343034732*^9, 3.674330354088974*^9}, 
+   3.674330404675145*^9, 3.674336563877057*^9}],
+
+Cell[BoxData[
+ RowBox[{"RemoveScheduledTask", "[", 
+  RowBox[{"ScheduledTasks", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6743316228315287`*^9, 3.674331656430499*^9}}]
+},
+WindowSize->{866, 767},
+WindowMargins->{{Automatic, 272}, {Automatic, -26}},
+FrontEndVersion->"10.3 for Linux ARM (32-bit) (January 18, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[560, 20, 354, 8, 55, "Input"],
+Cell[CellGroupData[{
+Cell[939, 32, 119, 3, 32, "Input"],
+Cell[1061, 37, 77, 1, 32, "Output"]
+}, Open  ]],
+Cell[1153, 41, 113, 1, 32, "Input"],
+Cell[1269, 44, 323, 8, 32, "Input"],
+Cell[1595, 54, 1014, 22, 165, "Input"],
+Cell[2612, 78, 3339, 83, 451, "Input"],
+Cell[5954, 163, 313, 4, 77, "Input"],
+Cell[6270, 169, 156, 2, 32, "Input"],
+Cell[6429, 173, 127, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[6581, 179, 426, 7, 32, "Input"],
+Cell[7010, 188, 90, 1, 32, "Output"]
+}, Open  ]],
+Cell[7115, 192, 156, 2, 32, "Input"],
+Cell[7274, 196, 121, 2, 32, "Input"],
+Cell[7398, 200, 96, 1, 32, "Input"],
+Cell[7497, 203, 1906, 42, 207, "Input"],
+Cell[CellGroupData[{
+Cell[9428, 249, 388, 11, 55, "Input"],
+Cell[9819, 262, 347, 10, 32, "Output"]
+}, Open  ]],
+Cell[10181, 275, 202, 4, 32, "Input"],
+Cell[10386, 281, 176, 3, 32, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
